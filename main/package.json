@@ -1,0 +1,19 @@
+{
+  "name": "web1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js cart.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express.js": "^1.0.0",
+    "nodemon": "^2.0.22",
+    "stripe": "^12.9.0"
+  }
+}
