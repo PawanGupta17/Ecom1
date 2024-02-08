@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury paws</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="source/png/logo22.webp" class="logo" alt="." /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="wishlist.html"><i class="ri-heart-line"></i></a>
+          </li>
+          <li id="lg-bag">
+            <a
+              ><i
+                class="ri-shopping-bag-line"
+                id="cart-icon"
+                data-quantity="0"
+              ></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="far ri-close-line"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a
+          ><i
+            class="ri-shopping-bag-line"
+            id="cart-icon-1"
+            data-quantity="0"
+          ></i
+        ></a>
+        <i id="bar" class="fas ri-menu-fold-fill"></i>
+      </div>
+    </section>
+    <div class="full-cart">
+      <section id="cart" class="section-p1">
+        <i class="fas ri-close-line" id="close-cart"></i>
+        <table width="100%" class="items">
+          <thead>
+            <tr>
+              <td>Remove</td>
+              <td>Imgae</td>
+              <td>Product</td>
+              <td>Price</td>
+              <td>Quantity</td>
+            </tr>
+          </thead>
+          <tbody id="cart-item" class="c-item">
+            <!-- <tr class="sitem">
+              <td>
+                <a
+                  ><i
+                    class="ri-close-circle-line"
+                    onclick="showToast(remCartMsg)"
+                  ></i
+                ></a>
+              </td>
+              <td><img src="img/products/f1.jpg" alt="" class="cart-img" /></td>
+              <td class="title">Cartoonn Astronaut T-Shirt</td>
+              <td class="price">$118.19</td>
+              <td><input type="number" value="1" class="cart-quantity" /></td>
+              <td>$118.19</td>
+            </tr>
+            <tr class="sitem">
+              <td>
+                <a
+                  ><i
+                    class="ri-close-circle-line"
+                    onclick="showToast(remCartMsg)"
+                  ></i
+                ></a>
+              </td>
+              <td><img src="img/products/f2.jpg" alt="" class="cart-img" /></td>
+              <td class="title">Cartoonn Astronaut T-Shirt</td>
+              <td class="price">$118.19</td>
+              <td><input type="number" value="1" class="cart-quantity" /></td>
+              <td>$118.19</td>
+            </tr>
+            <tr class="sitem">
+              <td>
+                <a
+                  ><i
+                    class="ri-close-circle-line"
+                    onclick="showToast(remCartMsg)"
+                  ></i
+                ></a>
+              </td>
+              <td><img src="img/products/f3.jpg" alt="" class="cart-img" /></td>
+              <td class="title">Cartoonn Astronaut T-Shirt</td>
+              <td class="price">$118.19</td>
+              <td><input type="number" value="1" class="cart-quantity" /></td>
+              <td>$118.19</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <div id="toastBox"></div>
+      </section>
+      <section id="cart-add" class="section-p1">
+        <div id="coupon">
+          <h3>Apply Coupon</h3>
+          <div>
+            <input type="text" placeholder="Enter Coupon" />
+            <button class="white">Apply</button>
+          </div>
+        </div>
+        <div id="subtotal">
+          <h3>Cart Total</h3>
+          <table>
+            <tr>
+              <td>Cart Subtotal</td>
+              <td class="total-price">$0</td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="total-s-price"><strong>$0</strong></td>
+            </tr>
+          </table>
+          <button class="white btn-buy">Proceed To Checkout</button>
+        </div>
+      </section>
+    </div>
+    <section id="page-header">
+      <h2>#Stay Home</h2>
+      <p>save more with coupon and up to 70% off</p>
+    </section>
+    <section id="product1" class="section-p1">
+      <div class="pro-container">
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh20ESAm-BaKTyhAdAXfktaidK16t007-QzvUrU2I9kEZwvePQPWJInK7PgpRO0xm86-EfuJk78f6xhVuqTYf9DIi6OFwz-oYlOJFJXriZZmcWwOM4A79GVZVKSzSsDj7Jao8WfpOf9bue4buwacuzWSFBeSBHWv0GvoXdtZNwCzBYoKg8_AyD5WOJM/s320/f1.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 1</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrnFsI934hswNEW2MvxfVc4O6XVG5FdicezvBauwcRjZc3WmpsVqCHcLtV35BNQ4PMrSJiSUdKXHwAPXgoV9M_9NsnSRPhoCW5cuz5-dKzFZjgdzBoWWwp8WcvA_7MM9PNuqITH03Hu71mZUZN2oG57asod55K53AyYM_qc9JS8HjsMxAoU-UiGyzL/s320/f2.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 2</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWjVZBmtTZcBUpae_v0Sa-0JGztEjJwpj_gmy2JgqSugqv1uSEs2nZpB72xk1YBqoENnyAdYb307Fi5jHq4VqHgT9U5qlWWbGH_KEj1Mbs2odxIIDFu9U-0Rwa_YcrhMqVWQM3viLKekOWfWKEz0GLbteEUy--HELEfmNkYXThpDe0ABdpj9udd-WF/s320/f3.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 3</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgI0IXLIaSAPMMZ2kZPFoAlVWklwsKkhZwqa67IyJ6PtbRpRQkWVAlhXB8GYF6GCGZrU7cGwa9v4BvEkk6m1WvVaDttMj6tTHvi_yljHWOU3rPwYCiY10zxTj12Kc0ZCyPuipWNp3upJk6FNnDIxI1Jm3FOC5al4634SGrUM4nI9eCiws68kyctz9a/s320/f4.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 4</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir9zZkYDGzv7MOiN13rm0Ye9kl9OOYPjjev9QjdTaQBLLMTJuN9j4P_0o6e1fUDyPj1Oajcz6IXWOftBMsFkKpUE5eAOk5Jpm-Gxtnr3kqQRYeqeeJytdL5y4rg1o20i07t3BMPyM2GajwwRfSi6JGy5zMjKW1Hb3W2zbMMYRVVxFbSDmGnCZNfiNs/s320/f5.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 5</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpMaCTI8Xvqpv9zc086R5pRsqOGq3GFOede3u_cBpDjJjpau12uMi9gr2ZUocxzwYqzzsEFvB5Mz_U8ddx7aRRAdDsmH-JSZSQM40s-QJ7vTKNgZ7NvYdz-wsMSv826PnCMPNpXhpUHqPe4o_kp4R_5af41zmLFdpWSRBjSyE1Pt47n71quBtSpQRm/s320/f6.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 6</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ6z1wJMhPsWevcqDfuh6nK8F4KH8yfOrcaneg3bfivEFeOWcN7Thd0PGyylOA7oznZgwP3z4saxLeE7imTLxubW1A-UivySCA6Z_US0Gbiq6scu37e0SH3WpWM80qSbGiCLGTXlVRNUwpqH7ot0FpZhd3ATneOhvLfOrwBpQnXuP6ySjAHdmTUWCh/s320/f7.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 7</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8pA71zgywMrctkyMuEzjSvw3TnmkUIy0YxgFolkBuOFNCILt_TaXZGHyQS_Vee7yj6EPcDYEGnNvHzs0QKrLbM9lhdnGuyXFpECFlvwcGaHPKJuWE2z18hr5I4C2t-X8ukrHW1HvseGATdgLqySk2jTJnkJpmRT5mtba5X_uXMIa6Mr9yCbh-s2Mn/s320/f8.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 8</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div id="toastBox"></div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEincZWpCdQNh_ek1oWQzNo5p9mtxwWwABBTJQXcR_yX2aG-R05h4Jo_JeA3pysRQKk9P0mT9dPM7AYTY3nOatqg8lFqRdfVzVpyHgjFXvKns4nK3UifOFG_ELzuK4cl0q0zNBxs_xqW5JAODBECGUt7u12TB7FoNnh_6yKMnZ544xNNw_FmrmNCUKfG/s320/n1.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 9</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd78qkfH2h1j7e_uIT9o69fMn4q9H_L8ToWcOnQv-nESDBI1w7GpOdjYcC7USjlwW3gp9ea1HM5erNRFiW01nAEk_keWnXshkxY4Rk9co2t7F896i9nXzo-f5QpgI1p29zivlQ-u0gvlX7SuxkS6apehxUEAChnfAgYSQTImJyq3idEJGQw5Z23K-a/s320/n2.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 10</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjRHu6eldMpfjdRDu7X25wuqF8sY7_ERs-3egFZdPnIqPVV2bTICvAnZ2fdzfhQmfU7E6nMLogLTdU_WWkjos5ZSJlm0TjOxr6IusoDhZHgisSviPjk27d6FzcABGrA2UeS6A2YZcQqaIrEQ7ax6XimYr5FRuDYkSdot2wIymLGlLn2ch-5qFDQA9f/s320/n3.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 11</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjRZKRyoY7xsKHBRgoB73zpfDjlYQ2Sd-wPS6wtLiqM6DB8tEFMJKKpS_d2LD_2D-V8m_6sVSjKsWRosViPSD-O208ybS0cegJByKCyM336GbzLccWsnD-miYA-0FywId3zBcVxajDCyJZdVhQD8XYANUHzEjNpnLBT5qRxXd8_oZ4AtrQMqgMpT9z/s320/n4.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 12</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi49rvBHXCKcvuLLKf6woATlo4dV5f7EKnKEKWu109oHiWDUy7krPnt6ndNKYsNF-0B_Aqi0deZZlHoUtGF9mlUsGbALHFx3MbOPu4xE0oXSlu4G-gjpWnuAjzOF9Lv2DMfn9OIp5_ERyt05xDxOHy-UCGm43ujcN1bGchYL4A0R2Cro0lBhSx-pe01/s320/n5.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 13</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyf53F-mtvaN76vcb9dY2qRqOZgflyzT60sBjvpClQAPW_BfLuPY5aeX9T_o1w7L4YTMkh6L7IU7V4jpTwafYxIClVkg8nCRx_sYOrp3MIKAsGe10KbDgmnrlT_Me0JAsGwPBXj7G9eqnwwBsudIFyiSql8ETHW2khIMg0tCM_UV-jgvmAFiShVmPO/s320/n6.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 14</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJV3sY7Oh5_Y8I8kcNd6NL7pTfm4WOI2Rb4FrN30v2MfuBPXA5EPFBv8chJCKvAElJ38JbXOPB8w4Xkzwhbc19YsRt-4u0KnPcBHeDIS_UWV5FoyV8Rg6rmSmfi1xNxbVyCNKyHlNBgB_qZK82ToMf61gohAmz5OuhtcDMvQDQY8BvXTdigpv_R1h1/s320/n7.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 15</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhafQYE3CK7bTjceGj31I67HA3gyD5mwALRABmUDVnQNJD8gXm0nCMXfX3bLm9jZ9imq9RK4DBVDYOplGcuML0EyWh-QBc2UdxiZIfLKbnGM6ZAfZaov_ks2QqeA7-SMBo56MYMsOLreSH924CTb2WOTqV8dPUPTK8EDfaE8fbIOlwFtEdwHETAqLL-/s320/n8.jpg"
+            alt=""
+            class="cart-img"
+          />
+          <div class="des">
+            <span>company name</span>
+            <h5 class="title">Product Name 16</h5>
+            <div class="star" title="4.5 out of 5">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+            </div>
+            <h4 class="price">$118.19</h4>
+          </div>
+          <a style="text-decoration: none" class="cart"
+            ><i class="ri-shopping-cart-line" onclick="AddCart(this)"></i
+          ></a>
+          <a style="text-decoration: none" class="wish"
+            ><i class="ri-heart-line" onclick="WishList(this)"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="pageination" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="ri-arrow-right-fill"></i></a>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Signup for news letter</h4>
+        <p>
+          Get email updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your e-mail address" />
+        <button class="white">Signup</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="source/png/logo22.webp" alt="" />
+        <h4>Contact</h4>
+        <p><strong> Address:</strong> 999 ABC XYZ, USA</p>
+        <p><strong> Phone:</strong> 9999999999</p>
+        <p><strong> Hours:</strong> 10:00 - 18:00, Monday - Saturday</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="social-btns">
+            <a class="btn facebook" href="#"
+              ><i class="fa ri-facebook-fill"></i
+            ></a>
+            <a class="btn twitter" href="#"
+              ><i class="fa ri-twitter-fill"></i
+            ></a>
+            <a class="btn instagram" href="#"
+              ><i class="fa ri-instagram-line"></i
+            ></a>
+            <a class="btn youtube" href="#"
+              ><i class="fa ri-youtube-fill"></i
+            ></a>
+            <a class="btn whatsapp" href="#"
+              ><i class="fa ri-whatsapp-line"></i
+            ></a>
+            <a class="btn telegram" href="#"
+              ><i class="fa ri-telegram-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View cart</a>
+        <a href="#">My Whishlists</a>
+        <a href="#">Track My order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secure Payment Gateway</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© 2023, Pawan - HTML CSS Ecommerce Corporation</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
