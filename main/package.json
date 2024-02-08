@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js cart.js"
+    "start": "nodemon server.js cart.js",
+    "build": "mkdir -p dist && cp -r public/* dist/"
   },
   "keywords": [],
   "author": "",
