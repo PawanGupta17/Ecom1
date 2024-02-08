@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import stripe from "stripe";
+const PORT = process.env.PORT || 3000;
 
 //Load variables
 dotenv.config();
@@ -61,6 +62,6 @@ app.post("/stripe-checkout", async (req, res) => {
   res.json(session.url);
 });
 
-app.listen(https://lux-paw-pet-shop-pawan.netlify.app/, () => {
-  console.log("listening on port 3000;");
+app.listen(PORT, () => {
+  console.log("listening on port;", PORT);
 });
