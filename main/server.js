@@ -61,6 +61,6 @@ app.post("/stripe-checkout", async (req, res) => {
   res.json(session.url);
 });
 
-app.listen(https://lux-paw-pet-shop-pawan.netlify.app/, () => {
+app.listen(3000, () => {
   console.log("listening on port 3000;");
 });
