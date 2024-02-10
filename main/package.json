@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "mkdir -p dist && cp -r public/* dist/",
-    "cart" : "node cart.js"
+    "cart" : "node public/cart.js"
   },
   "keywords": [],
   "author": "",
