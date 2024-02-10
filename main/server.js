@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import stripe from "stripe";
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 //Load variables
 dotenv.config();
