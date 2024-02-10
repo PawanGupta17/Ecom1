@@ -62,6 +62,6 @@ app.post("/stripe-checkout", async (req, res) => {
   res.json(session.url);
 });
 
-// app.listen(PORT, () => {
-//   console.log("listening on port;", PORT);
-// });
+app.listen(PORT, () => {
+  console.log("listening on port;", PORT);
+});
