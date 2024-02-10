@@ -1,4 +1,4 @@
-import express from "express";
+// import express from "express";
 
 const payBtn = document.querySelector(".white.btn-buy");
 const app = express();
